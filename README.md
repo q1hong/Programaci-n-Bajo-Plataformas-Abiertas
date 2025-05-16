@@ -1,12 +1,22 @@
-# Tarea 2
+# TAREA 1
+La tarea consiste en crear un programa en C, que calcule la mayor secuencia de 1´s dentro de las diagonales paralelas a la secundaria de una matriz binaria cuadrada, dada mediante un archivo .txt Para ello se crea una función que lee el archivo.txt y la guarda en la memoria dinámica con el uso de strtok y atoi para limpiar las cadenas de texto dentro de la matriz. Además, la función principal del programa encuentra la secuencia de 1´s en las diagonales con dirección  ↑↙ mediante un doble for para recorrer todas las diagonales paralelas a la secundaria, que al toparse con un 1 incrementa la variable longitud que luego se compara con la máxima longitud para así encontrar la secuencia más larga. Ultimamente se utiliza free para liberar la memoria dinámica de la matriz.
 
-Descripción:
+Matrices ejemplo: Matriz 1: (Salida: 5)
+1 0 1 0 1 1
+1 0 1 1 1 0
+0 1 1 1 1 1
+1 1 1 1 1 1
+0 1 1 1 1 0
+0 0 0 0 0 1
 
-La tarea basa en crear dos algoritmos que ordenen números en un array, y comparar los tiempos en el que lo ordenan para verificar la eficacia de
-cada uno.
+Matriz 2: (Salida: 2)
+0 0 1 1 0 
+0 0 0 0 1 
+1 1 1 1 0 
+0 1 0 0 1 
+0 1 0 1 0 
 
-El Bubble sort funciona comparando los vecinos y utilizando la función de intercambiar (swap), para posicionarlos números en orden. Mientras que 
-Selection sort busca el número más pequeño (Min) y lo coloca al principio.
-
-Para medir el rendimiento de ambos algoritmos se utiliza la función clock() para medir el tiempo que cada algoritmo ocupa, y se puede concluir que
-selection sort es más eficaz en cuanto a número de intercambios, mientras que bubble sort funciona en arreglos de menor tamaño.
+Matriz 3: (Salida: 2)
+0 1 1
+1 0 0
+0 0 1
